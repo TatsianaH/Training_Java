@@ -278,3 +278,17 @@ public class Number {
   }
 }
 ```
+*N-th Power*
+https://www.codewars.com/kata/57d814e4950d8489720008db/train/java
+```java
+public class Kata {
+	public static int nthPower(int[] array, int n) {
+		for (int i = 0; i < array.length; i++) {
+			if (i == n) {
+				return (int) Math.pow(array[i], n);
+			}
+		}
+		return -1;
+	}
+}
+```
