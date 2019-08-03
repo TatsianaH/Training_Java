@@ -264,4 +264,17 @@ public class Kata {
   }
 }
 ```
-**
+*Is it even?*
+https://www.codewars.com/kata/555a67db74814aa4ee0001b5/train/java
+```java
+public class Number {
+
+  public boolean isEven(double n) {
+    if(n % 2 == 0){
+    return true;
+    } else {
+    return false;
+    }
+  }
+}
+```
