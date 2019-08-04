@@ -332,3 +332,16 @@ public class StringUtils {
   }
 }
 ```
+*Surface Area and Volume of a Box*
+https://www.codewars.com/kata/565f5825379664a26b00007c/train/java
+```java
+public class Kata {
+    
+	public static int[] getSize(int w,int h,int d) {
+		int area = 2 * (w * h + h * d + w * d);
+		int volume =  w * h * d;
+		int [] arr = {area, volume}; 
+	        return arr;
+	}
+}
+```
