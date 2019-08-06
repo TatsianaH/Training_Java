@@ -362,3 +362,62 @@ public class Fibonacci {
 	}
 }
 ```
+*Inheritance*
+```java
+
+public class Animal {
+
+	private String type;
+	
+	//constructor
+	public Animal(String aType) {
+		type = aType;
+	}
+	//default constructor
+	public Animal() {
+		type = "";
+	}
+	//operations
+	public void eat() {
+		System.out.println("Eating...");
+	}
+//getter
+	public String getType() {
+		return type;
+	}
+	// we don't need to have setter here, because we already have the constructor
+	//public void setType(String type) {
+	//	this.type = type;
+	//}
+	
+	
+}
+
+public class Dog extends Animal {
+
+	private String name;
+	private String breed;
+	//constructor
+	public Dog (String aType, String aName, String aBreed) {
+		super (aType);
+		name = aName;
+		breed = aBreed;
+	}
+	//operations
+	public void bark() {
+		System.out.println("Barking");
+	}
+	public String getName() {
+		return name;
+	}
+	public String getBreed() {
+		return breed;
+	}
+	public void eat() {
+		System.out.println("Eating bones");
+	}
+	
+}
+
+
+```
