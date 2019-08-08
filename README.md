@@ -278,6 +278,21 @@ public class Kata {
   }
 }
 ```
+*4 case*
+```java
+public class Kata {
+  public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
+   int count1 = (int)Math.ceil((double)fighter1.health/fighter2.damagePerAttack);
+   int count2 = (int)Math.ceil((double)fighter2.health/fighter1.damagePerAttack);
+   
+   if(count1 < count2) return fighter2.name;
+   if(count1 > count2) return fighter1.name;
+   
+   return firstAttacker;
+   
+  }
+}
+```
 *Is it even?*
 https://www.codewars.com/kata/555a67db74814aa4ee0001b5/train/java
 ```java
