@@ -468,7 +468,7 @@ a.eat();
 
 }
 ```
-*Inheritance, package, arrays*
+*Inheritance, package, array*
 ```java
 //Person
 package person;
@@ -554,5 +554,4 @@ public class TestPersonSerg {
 
 	}
 
-}
-,,,
+}```
