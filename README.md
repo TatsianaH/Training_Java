@@ -470,6 +470,7 @@ a.eat();
 ```
 *Inheritance, package, arrays*
 ```java
+//Person
 package person;
 
 public class Person {
@@ -499,7 +500,7 @@ public class Person {
 		return sex;
 	}
 }
-
+//Employee
 package person;
 
 public class Employee extends Person {
@@ -520,7 +521,7 @@ public class Employee extends Person {
 		return salary;
 	}
 }
-
+//Salary
 package person;
 
 public class Salary {
@@ -533,3 +534,25 @@ public class Salary {
 		return res;
 	}
 }
+//TestPerson
+package person;
+
+import person.Employee;
+import person.Salary;
+
+public class TestPersonSerg {
+
+	public static void main(String... args) {
+
+		Employee employee1 = new Employee("Mike", 30, 'M', 300);
+		Employee employee2 = new Employee("Mila", 31, 'M', 500);
+		
+		Salary salary = new Salary();
+		int sum = salary.getSum(employee1, employee2);
+		
+		System.out.println(sum);
+
+	}
+
+}
+,,,
