@@ -468,3 +468,5 @@ a.eat();
 
 }
 ```
+*Inheritance, package, arrays*
+```java
