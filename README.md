@@ -470,3 +470,53 @@ a.eat();
 ```
 *Inheritance, package, arrays*
 ```java
+package person;
+
+public class Person {
+	private String name;
+	private int age;
+	private char sex;
+
+	public Person(String name, int age, char sex) {
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+	}
+
+	protected String getBaseName() {
+		return this.name;
+	}
+
+	public String getName() {
+		return (sex == 'W' ? "Ms. " : "Mr. ") + name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public int getSex() {
+		return sex;
+	}
+}
+
+package person;
+
+public class Employee extends Person {
+	
+	private int salary;
+
+	public Employee(String name, int age, char sex, int salary) {
+		super(name, age, sex);
+		this.salary = salary;
+	}
+
+	public boolean isSameName(Employee employee) {
+		return getBaseName().equals(employee.getBaseName());
+
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+}
