@@ -470,7 +470,7 @@ a.eat();
 ```
 *Inheritance, package, array*
 ```java
-//Person
+//Person class
 package person;
 
 public class Person {
@@ -500,7 +500,7 @@ public class Person {
 		return sex;
 	}
 }
-//Employee
+//Employee class
 package person;
 
 public class Employee extends Person {
@@ -521,7 +521,7 @@ public class Employee extends Person {
 		return salary;
 	}
 }
-//Salary
+//Salary class
 package person;
 
 public class Salary {
@@ -536,9 +536,6 @@ public class Salary {
 }
 //TestPerson
 package person;
-
-import person.Employee;
-import person.Salary;
 
 public class TestPersonSerg {
 
